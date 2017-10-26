@@ -54,14 +54,38 @@
 		A6A7CA871FA21FC500168001 /* Ylst_CSP */ = {
 			isa = PBXGroup;
 			children = (
-				A6A7CA881FA21FC500168001 /* AppDelegate.swift */,
-				A6A7CA8A1FA21FC500168001 /* ViewController.swift */,
-				A6A7CA8C1FA21FC500168001 /* Main.storyboard */,
-				A6A7CA8F1FA21FC500168001 /* Assets.xcassets */,
-				A6A7CA911FA21FC500168001 /* LaunchScreen.storyboard */,
-				A6A7CA941FA21FC500168001 /* Info.plist */,
+				A6A7CA9A1FA220A100168001 /* Controller */,
+				A6A7CA9B1FA220B700168001 /* View */,
+				A6A7CA9C1FA220BC00168001 /* Resources */,
 			);
 			path = Ylst_CSP;
+			sourceTree = "<group>";
+		};
+		A6A7CA9A1FA220A100168001 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6A7CA881FA21FC500168001 /* AppDelegate.swift */,
+				A6A7CA8A1FA21FC500168001 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6A7CA9B1FA220B700168001 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6A7CA8C1FA21FC500168001 /* Main.storyboard */,
+				A6A7CA911FA21FC500168001 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6A7CA9C1FA220BC00168001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6A7CA8F1FA21FC500168001 /* Assets.xcassets */,
+				A6A7CA941FA21FC500168001 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
