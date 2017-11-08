@@ -10,5 +10,13 @@ import UIKit
 
 class ProgrammingController: UIViewController
 {
+    override public func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
     
+    override public func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
 }
