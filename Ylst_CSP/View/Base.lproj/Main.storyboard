@@ -150,7 +150,8 @@
                         <viewLayoutGuide key="safeArea" id="lLC-Ge-f7L"/>
                     </view>
                     <connections>
-                        <outlet property="algorithmText" destination="he1-OI-85C" id="hUg-aH-IlE"/>
+                        <outlet property="algorithmSteps" destination="he1-OI-85C" id="TJ4-HP-j5y"/>
+                        <outlet property="algorithmText" destination="he1-OI-85C" id="IIz-qJ-svJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7G-sM-8hI" userLabel="First Responder" sceneMemberID="firstResponder"/>

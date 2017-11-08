@@ -19,6 +19,7 @@
 		A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA51FA2234100168001 /* ProgrammingController.swift */; };
 		A6A7CAA81FA2236E00168001 /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA71FA2236E00168001 /* InternetController.swift */; };
 		A6A7CAAA1FA2238800168001 /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA91FA2238800168001 /* GlobalImpactController.swift */; };
+		A6B80DC11FB36B8800EEDFEB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		A6A7CAA51FA2234100168001 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
 		A6A7CAA71FA2236E00168001 /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
 		A6A7CAA91FA2238800168001 /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
+		A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		A6A7CA7C1FA21FC500168001 = {
 			isa = PBXGroup;
 			children = (
+				A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */,
 				A6A7CA871FA21FC500168001 /* Ylst_CSP */,
 				A6A7CA861FA21FC500168001 /* Products */,
 			);
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A7CA931FA21FC500168001 /* LaunchScreen.storyboard in Resources */,
+				A6B80DC11FB36B8800EEDFEB /* Default-568h@2x.png in Resources */,
 				A6A7CA901FA21FC500168001 /* Assets.xcassets in Resources */,
 				A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */,
 			);

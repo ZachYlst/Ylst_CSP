@@ -23,7 +23,7 @@ class AlgorithmController: UIViewController
         let stepFour: String = "Fourth, create a new repository for your project"
         let stepFive: String = "Fifth, undo the initial commit and replace it with your own"
         
-        algorithmSteps = [stepOne, stepTwo, stepThree]
+        algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
@@ -43,7 +43,7 @@ class AlgorithmController: UIViewController
         algorithmText.attributedText = fullAttributedString
     }
     
-    private func createParagraphStyle() -> NSMutableParagraphStyle()
+    private func createParagraphStyle() -> NSParagraphStyle
     {
         let paragraphStyle: NSMutableParagraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .left
