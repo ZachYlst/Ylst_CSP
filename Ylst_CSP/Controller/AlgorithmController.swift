@@ -6,4 +6,15 @@
 //  Copyright © 2017 CTEC. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AlgorithmController: UIViewController
+{
+    @IBOutlet weak var algorithmText: UILabel!
+}
+
+override public func viewDidLoad()
+{
+    super.viewDidLoad()
+    setupAlgorithm()
+}
