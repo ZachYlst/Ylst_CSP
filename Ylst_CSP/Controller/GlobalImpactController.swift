@@ -19,4 +19,15 @@ class GlobalImpactController: UIViewController
     {
         super.didReceiveMemoryWarning()
     }
+    
+    @IBOutlet weak var problemButton: UILabel!
+    func problemButtonLabel()
+    {
+        self.problemButton.text = "a"
+    }
+    @IBOutlet weak var personalButton: UILabel!
+    func personalButtonLabel()
+    {
+        self.personalButton.text = "a"
+    }
 }
