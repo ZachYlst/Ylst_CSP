@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A603DA981FC329F6007B8463 /* RacecarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603DA971FC329F6007B8463 /* RacecarProtocol.swift */; };
+		A603DA9B1FC32AE5007B8463 /* Racecar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603DA9A1FC32AE5007B8463 /* Racecar.swift */; };
 		A6A7CA891FA21FC500168001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA881FA21FC500168001 /* AppDelegate.swift */; };
 		A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA8A1FA21FC500168001 /* ViewController.swift */; };
 		A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8C1FA21FC500168001 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A603DA971FC329F6007B8463 /* RacecarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacecarProtocol.swift; sourceTree = "<group>"; };
+		A603DA9A1FC32AE5007B8463 /* Racecar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racecar.swift; sourceTree = "<group>"; };
 		A6A7CA851FA21FC500168001 /* Ylst_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ylst_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7CA881FA21FC500168001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A7CA8A1FA21FC500168001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A603DA991FC329FC007B8463 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A603DA971FC329F6007B8463 /* RacecarProtocol.swift */,
+				A603DA9A1FC32AE5007B8463 /* Racecar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A6A7CA7C1FA21FC500168001 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +87,7 @@
 				A6A7CA9A1FA220A100168001 /* Controller */,
 				A6A7CA9B1FA220B700168001 /* View */,
 				A6A7CA9C1FA220BC00168001 /* Resources */,
+				A603DA991FC329FC007B8463 /* Model */,
 			);
 			path = Ylst_CSP;
 			sourceTree = "<group>";
@@ -188,12 +202,14 @@
 				A6A7CAAA1FA2238800168001 /* GlobalImpactController.swift in Sources */,
 				A6A7CAA81FA2236E00168001 /* InternetController.swift in Sources */,
 				A6A7CAA01FA2230300168001 /* AbstractionController.swift in Sources */,
+				A603DA981FC329F6007B8463 /* RacecarProtocol.swift in Sources */,
 				A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */,
 				A6A7CAA41FA2232F00168001 /* AlgorithmController.swift in Sources */,
 				A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */,
 				A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */,
 				A6A7CA9E1FA222CE00168001 /* CreativityController.swift in Sources */,
 				A6A7CA891FA21FC500168001 /* AppDelegate.swift in Sources */,
+				A603DA9B1FC32AE5007B8463 /* Racecar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

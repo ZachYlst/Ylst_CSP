@@ -13,6 +13,7 @@ class GlobalImpactController: UIViewController
     override public func viewDidLoad()
     {
         super.viewDidLoad()
+        setup()
     }
     
     override public func didReceiveMemoryWarning()
@@ -20,14 +21,16 @@ class GlobalImpactController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
+    @IBOutlet weak var planPicture: UIImageView!
+    
     @IBOutlet weak var problemButton: UILabel!
-    func problemButtonLabel()
-    {
-        self.problemButton.text = "a"
-    }
+    
     @IBOutlet weak var personalButton: UILabel!
-    func personalButtonLabel()
+    
+    private func setup() -> Void
     {
-        self.personalButton.text = "a"
+        planPicture.image = UIImage(named: "")
+        personalButton.text = "I haven't personally faced this issue in my own life, but have continually seen it occur with those around me."
+        problemButton.text = "This problem must be addressed, as America is continually striving for perfect equality. Therefore, inequality in American income should be looked into."
     }
 }

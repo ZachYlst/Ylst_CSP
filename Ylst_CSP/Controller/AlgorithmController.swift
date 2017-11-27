@@ -10,13 +10,17 @@ import UIKit
 
 class AlgorithmController: UIViewController
 {
+    @IBOutlet weak var soundPhoto: UIImageView!
+    
+    @IBOutlet weak var algorithmList: UILabel!
+    
     @IBOutlet weak var algorithmText: UILabel!
     
     private func setupAlgorithm() -> Void
     {
         var algorithmSteps: [String] = []
         
-        let algorithm: String = "These are the steps to creating a Swift/Java project"
+        let algorithm: String = "These are the steps to creating a Swift/Java project:"
         let stepOne: String = "First, open up either Xcode or Eclipse"
         let stepTwo: String = "Second, create the project, followed by naming and saving it"
         let stepThree: String = "Third, open up Github"
@@ -25,7 +29,7 @@ class AlgorithmController: UIViewController
         
         algorithmSteps = [stepOne, stepTwo, stepThree, stepFour, stepFive]
         
-        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmList.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
         
         for step in algorithmSteps
@@ -40,7 +44,7 @@ class AlgorithmController: UIViewController
             fullAttributedString.append(attributedStringStep)
         }
         
-        algorithmText.attributedText = fullAttributedString
+        algorithmList.attributedText = fullAttributedString
     }
     
     private func createParagraphStyle() -> NSParagraphStyle
@@ -57,6 +61,7 @@ class AlgorithmController: UIViewController
     override public func viewDidLoad()
     {
         super.viewDidLoad()
+        setupAlgorithm()
     }
     
     override public func didReceiveMemoryWarning()
