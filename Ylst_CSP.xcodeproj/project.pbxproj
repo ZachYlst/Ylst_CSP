@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A603DA981FC329F6007B8463 /* RacecarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603DA971FC329F6007B8463 /* RacecarProtocol.swift */; };
 		A603DA9B1FC32AE5007B8463 /* Racecar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603DA9A1FC32AE5007B8463 /* Racecar.swift */; };
+		A62FE7CD1FCF00250020482F /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */; };
+		A62FE7D01FCF0B2C0020482F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62FE7CF1FCF0B2B0020482F /* WebKit.framework */; };
 		A6A7CA891FA21FC500168001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA881FA21FC500168001 /* AppDelegate.swift */; };
 		A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA8A1FA21FC500168001 /* ViewController.swift */; };
 		A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8C1FA21FC500168001 /* Main.storyboard */; };
@@ -19,7 +21,7 @@
 		A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA11FA2231C00168001 /* DataInfoController.swift */; };
 		A6A7CAA41FA2232F00168001 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */; };
 		A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA51FA2234100168001 /* ProgrammingController.swift */; };
-		A6A7CAA81FA2236E00168001 /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA71FA2236E00168001 /* InternetController.swift */; };
+		A6A7CAA81FA2236E00168001 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */; };
 		A6A7CAAA1FA2238800168001 /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA91FA2238800168001 /* GlobalImpactController.swift */; };
 		A6B80DC11FB36B8800EEDFEB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,8 @@
 /* Begin PBXFileReference section */
 		A603DA971FC329F6007B8463 /* RacecarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacecarProtocol.swift; sourceTree = "<group>"; };
 		A603DA9A1FC32AE5007B8463 /* Racecar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racecar.swift; sourceTree = "<group>"; };
+		A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
+		A62FE7CF1FCF0B2B0020482F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A6A7CA851FA21FC500168001 /* Ylst_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ylst_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7CA881FA21FC500168001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A7CA8A1FA21FC500168001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,7 +43,7 @@
 		A6A7CAA11FA2231C00168001 /* DataInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfoController.swift; sourceTree = "<group>"; };
 		A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
 		A6A7CAA51FA2234100168001 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
-		A6A7CAA71FA2236E00168001 /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
+		A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		A6A7CAA91FA2238800168001 /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
 		A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A62FE7D01FCF0B2C0020482F /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +69,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A62FE7CE1FCF0B2B0020482F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A62FE7CF1FCF0B2B0020482F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6A7CA7C1FA21FC500168001 = {
 			isa = PBXGroup;
 			children = (
 				A6B80DC01FB36B8800EEDFEB /* Default-568h@2x.png */,
 				A6A7CA871FA21FC500168001 /* Ylst_CSP */,
 				A6A7CA861FA21FC500168001 /* Products */,
+				A62FE7CE1FCF0B2B0020482F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,8 +116,9 @@
 				A6A7CAA11FA2231C00168001 /* DataInfoController.swift */,
 				A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */,
 				A6A7CAA51FA2234100168001 /* ProgrammingController.swift */,
-				A6A7CAA71FA2236E00168001 /* InternetController.swift */,
+				A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */,
 				A6A7CAA91FA2238800168001 /* GlobalImpactController.swift */,
+				A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -200,7 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A7CAAA1FA2238800168001 /* GlobalImpactController.swift in Sources */,
-				A6A7CAA81FA2236E00168001 /* InternetController.swift in Sources */,
+				A62FE7CD1FCF00250020482F /* InternetMasterViewController.swift in Sources */,
+				A6A7CAA81FA2236E00168001 /* InternetDetailViewController.swift in Sources */,
 				A6A7CAA01FA2230300168001 /* AbstractionController.swift in Sources */,
 				A603DA981FC329F6007B8463 /* RacecarProtocol.swift in Sources */,
 				A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */,
