@@ -66,7 +66,7 @@ class InternetMasterViewController: UITableViewController
         return internetTopics.count
     }
     
-    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let currentText = internetTopics[indexPath.row]
@@ -87,7 +87,7 @@ class InternetMasterViewController: UITableViewController
                 
                 if indexPath.row == 0
                 {
-                    //TODO: Replace with your definitions - eat time to use the """ operator
+                    //TODO: Replace with your definitions - great time to use the """ operator
                     pageText = "All the definitions you wrote..."
                 }
                 else
