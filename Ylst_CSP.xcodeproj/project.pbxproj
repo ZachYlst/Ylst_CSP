@@ -11,11 +11,11 @@
 		A603DA9B1FC32AE5007B8463 /* Racecar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A603DA9A1FC32AE5007B8463 /* Racecar.swift */; };
 		A62FE7CD1FCF00250020482F /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */; };
 		A62FE7D01FCF0B2C0020482F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62FE7CF1FCF0B2B0020482F /* WebKit.framework */; };
+		A631468B1FD6EFB500357260 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631468A1FD6EFB500357260 /* DrawingView.swift */; };
 		A6A7CA891FA21FC500168001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA881FA21FC500168001 /* AppDelegate.swift */; };
 		A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA8A1FA21FC500168001 /* ViewController.swift */; };
 		A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8C1FA21FC500168001 /* Main.storyboard */; };
 		A6A7CA901FA21FC500168001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8F1FA21FC500168001 /* Assets.xcassets */; };
-		A6A7CA931FA21FC500168001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA911FA21FC500168001 /* LaunchScreen.storyboard */; };
 		A6A7CA9E1FA222CE00168001 /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA9D1FA222CE00168001 /* CreativityController.swift */; };
 		A6A7CAA01FA2230300168001 /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA9F1FA2230300168001 /* AbstractionController.swift */; };
 		A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA11FA2231C00168001 /* DataInfoController.swift */; };
@@ -31,12 +31,12 @@
 		A603DA9A1FC32AE5007B8463 /* Racecar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racecar.swift; sourceTree = "<group>"; };
 		A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		A62FE7CF1FCF0B2B0020482F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A631468A1FD6EFB500357260 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		A6A7CA851FA21FC500168001 /* Ylst_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ylst_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7CA881FA21FC500168001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A7CA8A1FA21FC500168001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6A7CA8D1FA21FC500168001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6A7CA8F1FA21FC500168001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6A7CA921FA21FC500168001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6A7CA941FA21FC500168001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A7CA9D1FA222CE00168001 /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
 		A6A7CA9F1FA2230300168001 /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A7CA8C1FA21FC500168001 /* Main.storyboard */,
-				A6A7CA911FA21FC500168001 /* LaunchScreen.storyboard */,
+				A631468A1FD6EFB500357260 /* DrawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6A7CA931FA21FC500168001 /* LaunchScreen.storyboard in Resources */,
 				A6B80DC11FB36B8800EEDFEB /* Default-568h@2x.png in Resources */,
 				A6A7CA901FA21FC500168001 /* Assets.xcassets in Resources */,
 				A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */,
@@ -219,6 +218,7 @@
 				A6A7CAA81FA2236E00168001 /* InternetDetailViewController.swift in Sources */,
 				A6A7CAA01FA2230300168001 /* AbstractionController.swift in Sources */,
 				A603DA981FC329F6007B8463 /* RacecarProtocol.swift in Sources */,
+				A631468B1FD6EFB500357260 /* DrawingView.swift in Sources */,
 				A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */,
 				A6A7CAA41FA2232F00168001 /* AlgorithmController.swift in Sources */,
 				A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */,
@@ -238,14 +238,6 @@
 				A6A7CA8D1FA21FC500168001 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A6A7CA911FA21FC500168001 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6A7CA921FA21FC500168001 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

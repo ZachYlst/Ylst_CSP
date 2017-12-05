@@ -49,15 +49,15 @@ class InternetMasterViewController: UITableViewController
     {
         super.viewDidLoad()
         setup()
-        // Uncomm the following line to preserve selection between presentations
+        // Uncomment the following line to preserve selection between presentations
         self.clearsSelectionOnViewWillAppear = false
     }
     
     //MARK: - Table view data source
     
-    override public func numberOfSections(in tabView: UITableView) -> Int
+    override public func numberOfSections(in tableView: UITableView) -> Int
     {
-        // warning Incomplete implementation, return the number of selections
+        // #warning Incomplete implementation, return the number of selections
         return 1
     }
     
@@ -95,8 +95,7 @@ class InternetMasterViewController: UITableViewController
                     pageText = internetTopics[indexPath.row]
                 }
                 
-                let controller = segue.destination as!
-                    InternetDetailViewController
+                let controller = segue.destination as! InternetDetailViewController
                 
                 controller.detailAddress = urlString
                 controller.detailText = pageText
