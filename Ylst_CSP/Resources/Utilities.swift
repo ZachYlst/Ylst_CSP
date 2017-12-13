@@ -7,7 +7,7 @@
 //
 import Foundation
 
-
+//Global variable (independent)
 var gameLevel : Int = 1
 
 
