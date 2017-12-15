@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 
-class ProgrammingController: UIViewController
+public class ProgrammingController: UIViewController
 {
     //MARK: UI Components
     
@@ -19,8 +19,8 @@ class ProgrammingController: UIViewController
         let gameScene = StartScene(size: view.bounds.size)
         let gameView = view as! SKView
         
-        gameView.showFPS = true
-        gameView.showNodeCount = true
+        gameView.showsFPS = true
+        gameView.showsNodeCount = true
         gameView.ignoresSiblingOrder = true
         
         gameScene.scaleMode = .resizeFill

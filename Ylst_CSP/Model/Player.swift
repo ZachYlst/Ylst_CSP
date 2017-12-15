@@ -14,7 +14,7 @@ public class Player: SKSpriteNode
     private var canFire : Bool = true
 
     private var invincible = false
-    private var lives:Int = 3
+    private var lives: Int = 3
     {
         didSet
         {
@@ -29,12 +29,19 @@ public class Player: SKSpriteNode
         }
     }
 
-    
     public init()
     {
         let texture = SKTexture(imageNamed: "x wing1")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         
+        self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
+        self.physicsBody?.isDynamic = true
+        self.physicsBody?.usesPreciseCollisionDetection = false
+        self.physicsBody?.categoryBitMask = CollisionCategories.Player
+        self.physicsBody?.contactTestBitMask = CollisionCategories.invaderBullet | CollisionCategories.Invader
+        self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
+        self.physicsBody?.allowsRotation = false
+        animate()
     }
     
     required public init?(coder aDecoder: NSCoder)

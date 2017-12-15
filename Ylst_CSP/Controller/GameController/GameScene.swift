@@ -114,7 +114,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
-        backgroundColor = UIColor.magenta
+        backgroundColor = UIColor.blue
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
@@ -125,7 +125,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
     {
-       
+        player.fireBullet(scene: self)
     }
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
