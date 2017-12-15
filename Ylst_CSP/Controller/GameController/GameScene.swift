@@ -29,7 +29,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     var accelerationX: CGFloat = 0.0
     
     //MARK:- Game Methods
-    
     private func setupInvaders() -> Void
     {
         let numberOfInvaders = gameLevel * 2 + 1
@@ -39,7 +38,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             {
                 let currentInvader :Invader = Invader()
                 let halfWidth : CGFloat = currentInvader.size.width / 2
-                let xPosition : CGFloat = size.width / 2 - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
+                let xPosition : CGFloat = size.width - halfWidth - (CGFloat(numberOfInvaders) * currentInvader.size.width) + 10
                 
                 currentInvader.position = CGPoint(x: xPosition + (currentInvader.size.width + CGFloat(10)) * CGFloat(invaderCol - 1), y: CGFloat(self.size.height - CGFloat(invaderRow) * 46))
                 currentInvader.invaderRow = invaderRow
@@ -52,8 +51,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 }
             }
         }
-        
-        
     }
 
     private func setupPlayer() -> Void
@@ -68,7 +65,13 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             //Closure parameters
             node, stop in
-            
+            let invader = node as! SKSpriteNode
+            let invaderHalfWidth = invader.size.width / 2
+            invader.position.x -= CGFloat(self.invaderSpeed)
+            if(invader.position.x > self.rightBounds - invaderHalfWidth || invader.position.x < self.leftBounds + invaderHalfWidth)
+            {
+                changeDirection = true
+            }
         }
         
         if(changeDirection == true)
@@ -77,11 +80,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             self.enumerateChildNodes(withName: "invader")
             {
                 node, stop in
-            
+                let invader = node as! SKSpriteNode
+                invader.position.y -= CGFloat(10)
             }
-            
+            changeDirection = false
         }
-        
     }
     
     private func invokeInvaderFire() -> Void
@@ -106,7 +109,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     
     //MARK:- Scene methods
-    
     override public func didMove(to view: SKView) -> Void
     {
         self.physicsWorld.gravity = CGVector(dx:0, dy:0)
@@ -120,7 +122,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         setupPlayer()
         invokeInvaderFire()
         setupAccelerometer()
-        
     }
 
     override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
@@ -130,7 +131,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
-        
+        moveInvaders()
     }
     
     override public func didSimulatePhysics()
@@ -151,7 +152,6 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 } )
     }
     
-    
     //MARK:- SKPhysicsContactDelegate method
     
     func didBeginContact(contact: SKPhysicsContact) -> Void
@@ -169,7 +169,5 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             firstBody = contact.bodyB
             secondBody = contact.bodyA
         }
-        
     }
-    
 }
