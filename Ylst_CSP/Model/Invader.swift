@@ -29,7 +29,7 @@ public class Invader: SKSpriteNode
         self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
     }
     
-    // Required init must be provided by subclass
+    // Required for Storyboard use
     required public init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)

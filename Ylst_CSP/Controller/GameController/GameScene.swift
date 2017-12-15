@@ -75,7 +75,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             }
         }
         
-        if(changeDirection == true)
+        if(changeDirection)
         {
             self.invaderSpeed *= -1
             self.enumerateChildNodes(withName: "invader")
@@ -112,7 +112,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     //MARK:- Scene methods
     override public func didMove(to view: SKView) -> Void
     {
-        self.physicsWorld.gravity = CGVector(dx:0, dy:0)
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         self.physicsWorld.contactDelegate = self
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
@@ -154,21 +154,36 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     }
     
     //MARK:- SKPhysicsContactDelegate method
-    
-    func didBeginContact(contact: SKPhysicsContact) -> Void
+    public func didBegin(_ contact: SKPhysicsContact) -> Void
     {
-        
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
+        
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
         {
             firstBody = contact.bodyA
             secondBody = contact.bodyB
         }
+            
         else
         {
             firstBody = contact.bodyB
             secondBody = contact.bodyA
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        {
+            print("Invader and Player Bullet Contact")
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) && (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
+        {
+            print("Player and Invader Bullet Contact")
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) && (secondBody.categoryBitMask & CollisionCategories.Player != 0))
+        {
+            print("Invader and Player Collision Contact")
         }
     }
 }
