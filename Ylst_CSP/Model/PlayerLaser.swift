@@ -11,7 +11,7 @@ import SpriteKit
 
 class PlayerLaser: Projectile
 {
-    override init(imageName: String, bulletSound:String?)
+    override init(imageName: String, playerBullet: String?)
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
         self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)

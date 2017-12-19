@@ -90,12 +90,28 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     private func invokeInvaderFire() -> Void
     {
-        
+        let fireBullet = SKAction.run()
+        {
+            self.fireInvaderBullet()
+        }
+        let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
+        let invaderFire = SKAction.sequence([fireBullet, waitToFireInvaderBullet])
+        let repeatForeverAction = SKAction.repeatForever(invaderFire)
+        run(repeatForeverAction)
     }
     
     func fireInvaderBullet() -> Void
     {
-       
+        if(invadersThatCanFire.isEmpty)
+        {
+            gameLevel += 1
+            levelComplete()
+        }
+        
+        if let randomInvader = invadersThatCanFire.randomElement()
+        {
+            randomInvader.fireBullet(scene: self)
+        }
     }
     
     func newGame() -> Void
@@ -130,6 +146,11 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         self.physicsBody?.categoryBitMask = CollisionCategories.EdgeBody
         
+        let starField = SKEmitterNode(fileNamed: "StarField")
+        starField?.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        starField?.zPosition = -1000
+        addChild(starField!)
+        
         backgroundColor = UIColor.blue
         rightBounds = self.size.width - 30
         setupInvaders()
@@ -150,7 +171,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector(dx: accelerationX * 600, dy: 0)
     }
 
     //MARK:- Handle Motion
@@ -163,7 +184,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                 in
                     let acceleration = accelerometerData!.acceleration
                     self.accelerationX = CGFloat(acceleration.x)
-                } )
+            } )
     }
     
     //MARK:- SKPhysicsContactDelegate method

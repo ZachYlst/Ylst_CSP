@@ -9,9 +9,9 @@
 import UIKit
 import SpriteKit
 
-public class InvaderBullet: Projectile
+public class InvaderLaser: Projectile
 {
-    override init(imageName: String, bulletSound:String?)
+    override init(imageName: String, bulletSound: String?)
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
         
@@ -26,10 +26,5 @@ public class InvaderBullet: Projectile
     required public init?(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
-    }
-    
-    public func fireBullet(scene: SKScene) -> Void
-    {
-        
     }
 }
