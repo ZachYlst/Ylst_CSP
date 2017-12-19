@@ -11,7 +11,6 @@ import SpriteKit
 
 public class LevelCompleteScene: SKScene
 {
-
     override public func didMove(to view: SKView) -> Void
     {
         self.backgroundColor = SKColor.black
