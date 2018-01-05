@@ -1,5 +1,5 @@
 //
-//  DataInfoController.swift
+//  DataController.swift
 //  Ylst_CSP
 //
 //  Created by Ylst, Zachary on 10/26/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataInfoController: UIViewController
+class DataController: UITableViewController
 {
     override public func viewDidLoad()
     {

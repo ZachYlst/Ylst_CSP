@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  BucketItemCell.swift
 //  Ylst_CSP
 //
-//  Created by Ylst, Zachary on 10/26/17.
-//  Copyright © 2017 CTEC. All rights reserved.
+//  Created by Ylst, Zachary on 1/5/18.
+//  Copyright © 2018 CTEC. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController
+class BucketItemCell: UITableViewController
 {
     override public func viewDidLoad()
     {
@@ -19,6 +19,4 @@ class ViewController: UIViewController
     {
         super.didReceiveMemoryWarning()
     }
-
 }
-

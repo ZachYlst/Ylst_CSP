@@ -22,13 +22,15 @@
 		A694A5D71FE18886002DBEA2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694A5C21FE177DB002DBEA2 /* Player.swift */; };
 		A694A5D81FE18886002DBEA2 /* PlayerLaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694A5BF1FE177DB002DBEA2 /* PlayerLaser.swift */; };
 		A694A5D91FE18886002DBEA2 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694A5BE1FE177DB002DBEA2 /* Projectile.swift */; };
+		A69F39041FFFC8E4003A501C /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F39031FFFC8E4003A501C /* BucketItemCell.swift */; };
+		A69F39071FFFC9C5003A501C /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F39061FFFC9C5003A501C /* BucketItem.swift */; };
 		A6A7CA891FA21FC500168001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA881FA21FC500168001 /* AppDelegate.swift */; };
 		A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA8A1FA21FC500168001 /* ViewController.swift */; };
 		A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8C1FA21FC500168001 /* Main.storyboard */; };
 		A6A7CA901FA21FC500168001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A7CA8F1FA21FC500168001 /* Assets.xcassets */; };
 		A6A7CA9E1FA222CE00168001 /* CreativityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA9D1FA222CE00168001 /* CreativityController.swift */; };
 		A6A7CAA01FA2230300168001 /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CA9F1FA2230300168001 /* AbstractionController.swift */; };
-		A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA11FA2231C00168001 /* DataInfoController.swift */; };
+		A6A7CAA21FA2231C00168001 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA11FA2231C00168001 /* DataController.swift */; };
 		A6A7CAA41FA2232F00168001 /* AlgorithmController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */; };
 		A6A7CAA61FA2234100168001 /* ProgrammingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA51FA2234100168001 /* ProgrammingController.swift */; };
 		A6A7CAA81FA2236E00168001 /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */; };
@@ -57,6 +59,8 @@
 		A694A5D11FE18249002DBEA2 /* extra sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "extra sound.mp3"; sourceTree = "<group>"; };
 		A694A5D21FE1824A002DBEA2 /* invader sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "invader sound.mp3"; sourceTree = "<group>"; };
 		A694A5D31FE1824A002DBEA2 /* powerup sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "powerup sound.mp3"; sourceTree = "<group>"; };
+		A69F39031FFFC8E4003A501C /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		A69F39061FFFC9C5003A501C /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		A6A7CA851FA21FC500168001 /* Ylst_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ylst_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A7CA881FA21FC500168001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A7CA8A1FA21FC500168001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +69,7 @@
 		A6A7CA941FA21FC500168001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A7CA9D1FA222CE00168001 /* CreativityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityController.swift; sourceTree = "<group>"; };
 		A6A7CA9F1FA2230300168001 /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
-		A6A7CAA11FA2231C00168001 /* DataInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfoController.swift; sourceTree = "<group>"; };
+		A6A7CAA11FA2231C00168001 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmController.swift; sourceTree = "<group>"; };
 		A6A7CAA51FA2234100168001 /* ProgrammingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingController.swift; sourceTree = "<group>"; };
 		A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 				A694A5C21FE177DB002DBEA2 /* Player.swift */,
 				A694A5BF1FE177DB002DBEA2 /* PlayerLaser.swift */,
 				A694A5BE1FE177DB002DBEA2 /* Projectile.swift */,
+				A69F39061FFFC9C5003A501C /* BucketItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +133,15 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		A69F39051FFFC8F8003A501C /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				A69F39031FFFC8E4003A501C /* BucketItemCell.swift */,
+				A6A7CAA11FA2231C00168001 /* DataController.swift */,
+			);
+			path = DataView;
+			sourceTree = "<group>";
+		};
 		A6A7CA7C1FA21FC500168001 = {
 			isa = PBXGroup;
 			children = (
@@ -161,11 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				A694A5CE1FE1820F002DBEA2 /* GameController */,
+				A69F39051FFFC8F8003A501C /* DataView */,
 				A6A7CA881FA21FC500168001 /* AppDelegate.swift */,
 				A6A7CA8A1FA21FC500168001 /* ViewController.swift */,
 				A6A7CA9D1FA222CE00168001 /* CreativityController.swift */,
 				A6A7CA9F1FA2230300168001 /* AbstractionController.swift */,
-				A6A7CAA11FA2231C00168001 /* DataInfoController.swift */,
 				A6A7CAA31FA2232F00168001 /* AlgorithmController.swift */,
 				A6A7CAA51FA2234100168001 /* ProgrammingController.swift */,
 				A6A7CAA71FA2236E00168001 /* InternetDetailViewController.swift */,
@@ -270,12 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69F39071FFFC9C5003A501C /* BucketItem.swift in Sources */,
 				A694A5CD1FE181E3002DBEA2 /* StartScene.swift in Sources */,
 				A694A5D61FE18886002DBEA2 /* InvaderLaser.swift in Sources */,
 				A694A5D51FE18886002DBEA2 /* Invader.swift in Sources */,
 				A6A7CAAA1FA2238800168001 /* GlobalImpactController.swift in Sources */,
 				A68829D21FD99CD300965504 /* ArtCell.swift in Sources */,
 				A62FE7CD1FCF00250020482F /* InternetMasterViewController.swift in Sources */,
+				A69F39041FFFC8E4003A501C /* BucketItemCell.swift in Sources */,
 				A694A5B91FE176C7002DBEA2 /* Utilities.swift in Sources */,
 				A6A7CAA81FA2236E00168001 /* InternetDetailViewController.swift in Sources */,
 				A694A5D81FE18886002DBEA2 /* PlayerLaser.swift in Sources */,
@@ -285,7 +301,7 @@
 				A694A5CB1FE181E3002DBEA2 /* GameScene.swift in Sources */,
 				A6A7CAA41FA2232F00168001 /* AlgorithmController.swift in Sources */,
 				A694A5CC1FE181E3002DBEA2 /* LevelCompleteScene.swift in Sources */,
-				A6A7CAA21FA2231C00168001 /* DataInfoController.swift in Sources */,
+				A6A7CAA21FA2231C00168001 /* DataController.swift in Sources */,
 				A6A7CA8B1FA21FC500168001 /* ViewController.swift in Sources */,
 				A694A5D71FE18886002DBEA2 /* Player.swift in Sources */,
 				A694A5D91FE18886002DBEA2 /* Projectile.swift in Sources */,
