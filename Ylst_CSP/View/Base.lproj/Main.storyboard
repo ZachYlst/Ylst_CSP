@@ -190,15 +190,15 @@ Cg
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bucketItemSignature" destination="Klu-t0-8sj" id="wGV-kX-cEs"/>
-                                    <outlet property="bucketItemSymbol" destination="Ip3-GJ-cfP" id="v48-qk-q8E"/>
-                                    <outlet property="bucketItemText" destination="7Gi-B2-77V" id="hFf-R7-vfY"/>
+                                    <outlet property="bucketItemSignature" destination="Klu-t0-8sj" id="MyL-pu-ube"/>
+                                    <outlet property="bucketItemSymbol" destination="Ip3-GJ-cfP" id="hko-mR-F3M"/>
+                                    <outlet property="bucketItemText" destination="7Gi-B2-77V" id="2uE-oc-Ftg"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="v15-7n-PWB" id="dhP-mk-Xr3"/>
-                            <outlet property="delegate" destination="v15-7n-PWB" id="VzC-AE-fDz"/>
+                            <outlet property="dataSource" destination="v15-7n-PWB" id="Xap-lS-DDc"/>
+                            <outlet property="delegate" destination="v15-7n-PWB" id="7WT-ar-D8H"/>
                         </connections>
                     </tableView>
                 </tableViewController>
@@ -651,6 +651,6 @@ Cg
         <image name="swiftSample" width="1248" height="1244"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="60j-kP-ids"/>
+        <segue reference="3be-Q1-NVn"/>
     </inferredMetricsTieBreakers>
 </document>

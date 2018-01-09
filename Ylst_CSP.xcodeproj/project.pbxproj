@@ -11,6 +11,7 @@
 		A62FE7CD1FCF00250020482F /* InternetMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */; };
 		A62FE7D01FCF0B2C0020482F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62FE7CF1FCF0B2B0020482F /* WebKit.framework */; };
 		A631468B1FD6EFB500357260 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631468A1FD6EFB500357260 /* DrawingView.swift */; };
+		A65ECB8B2005132C0065E48C /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = A65ECB8A2005132C0065E48C /* bucket.csv */; };
 		A68829D21FD99CD300965504 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68829D11FD99CD300965504 /* ArtCell.swift */; };
 		A694A5B91FE176C7002DBEA2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694A5B81FE176C7002DBEA2 /* Utilities.swift */; };
 		A694A5BB1FE176F0002DBEA2 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = A694A5BA1FE176F0002DBEA2 /* StarField.sks */; };
@@ -43,6 +44,7 @@
 		A62FE7CC1FCF00250020482F /* InternetMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterViewController.swift; sourceTree = "<group>"; };
 		A62FE7CF1FCF0B2B0020482F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A631468A1FD6EFB500357260 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		A65ECB8A2005132C0065E48C /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket.csv; path = ../../../../../Downloads/bucket.csv; sourceTree = "<group>"; };
 		A68829D11FD99CD300965504 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		A694A5B81FE176C7002DBEA2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A694A5BA1FE176F0002DBEA2 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		A6A7CA9C1FA220BC00168001 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A65ECB8A2005132C0065E48C /* bucket.csv */,
 				A694A5B81FE176C7002DBEA2 /* Utilities.swift */,
 				A694A5D41FE18254002DBEA2 /* Sounds */,
 				A6A7CA8F1FA21FC500168001 /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 			files = (
 				A694A5BB1FE176F0002DBEA2 /* StarField.sks in Resources */,
 				A6B80DC11FB36B8800EEDFEB /* Default-568h@2x.png in Resources */,
+				A65ECB8B2005132C0065E48C /* bucket.csv in Resources */,
 				A6A7CA901FA21FC500168001 /* Assets.xcassets in Resources */,
 				A6A7CA8E1FA21FC500168001 /* Main.storyboard in Resources */,
 			);

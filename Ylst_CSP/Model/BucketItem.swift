@@ -8,15 +8,14 @@
 
 import UIKit
 
-class BucketItem: UIViewController
+public class BucketItem
 {
-    override func viewDidLoad()
+    let itemContents: String
+    let itemAuthor: String
+    
+    init(contents: String, author: String)
     {
-        super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
+        itemContents = contents
+        itemAuthor = author
     }
 }

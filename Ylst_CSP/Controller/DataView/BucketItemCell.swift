@@ -42,7 +42,7 @@ class BucketItemCell: UITableViewCell
         if (bucketItem != nil)
         {
             bucketItemSignature.text = bucketItem.itemAuthor
-            bucketItemText.text = itemContents
+            bucketItemText.text = bucketItem.itemContents
         }
         else
         {
@@ -50,6 +50,6 @@ class BucketItemCell: UITableViewCell
             bucketItemText.text = "text goes here"
         }
         
-        bucketItemSymbol.text = randomEmojiSymbol()
+        bucketItemSymbol.text = randomEmoji()
     }
 }
