@@ -8,17 +8,48 @@
 
 import UIKit
 
-
-
-class BucketItemCell: UITableViewController
+class BucketItemCell: UITableViewCell
 {
-    override public func viewDidLoad()
+    @IBOutlet weak var bucketItemText: UILabel!
+    @IBOutlet weak var bucketItemSymbol: UILabel!
+    @IBOutlet weak var bucketItemSignature: UILabel!
+    
+    var bucketItem : BucketItem!
     {
-        super.viewDidLoad()
+        didSet
+        {
+            updateCellView()
+        }
     }
-
-    override public func didReceiveMemoryWarning()
+    
+    private func randomEmoji() -> String
     {
-        super.didReceiveMemoryWarning()
+        let emojiStart = 0x1F601
+        let emojiEnd = 0x1F64F
+        let symbolStart = 0x1F680
+        let symbolEnd = 0x1F6C5
+        
+        let emojiRange = 79
+        let symbolRange = 70
+        
+        let ascii = emojiStart + Int(arc4random_uniform(UInt32(emojiRange)))
+        let emoji = UnicodeScalar(ascii)?.description
+        return emoji!
+    }
+    
+    private func updateCellView()
+    {
+        if (bucketItem != nil)
+        {
+            bucketItemSignature.text = bucketItem.itemAuthor
+            bucketItemText.text = itemContents
+        }
+        else
+        {
+            bucketItemSignature.text = "author goes here"
+            bucketItemText.text = "text goes here"
+        }
+        
+        bucketItemSymbol.text = randomEmojiSymbol()
     }
 }

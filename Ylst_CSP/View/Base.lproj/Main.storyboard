@@ -153,10 +153,10 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="43" id="9F7-6Q-GCV" userLabel="dataIdentifier">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="43" id="9F7-6Q-GCV" userLabel="dataIdentifier" customClass="DataViewController">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9F7-6Q-GCV" id="Bfp-DV-29Y">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9F7-6Q-GCV" id="Bfp-DV-29Y" customClass="BucketItemCell" customModule="Ylst_CSP" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="42.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -189,6 +189,11 @@ Cg
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="Klu-t0-8sj" id="wGV-kX-cEs"/>
+                                    <outlet property="bucketItemSymbol" destination="Ip3-GJ-cfP" id="v48-qk-q8E"/>
+                                    <outlet property="bucketItemText" destination="7Gi-B2-77V" id="hFf-R7-vfY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
